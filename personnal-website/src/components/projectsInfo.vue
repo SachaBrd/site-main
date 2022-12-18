@@ -41,13 +41,13 @@
           :printSpeed="50"
           @printDone="claraLine4 = true"
           :printStatus="claraLine3"
-          printableText="Website: "
+          printableText="This website: "
         ></colorText
         ><a v-if="claraLine4"
           class="text-cyan-400 underline"
-          href="https://github.com/sachabrd"
+          href="https://github.com/SachaBrd/site-main"
           target="_blank"
-          >github.com/sachabrd</a
+          >https://github.com/SachaBrd/site-main</a
         >
       </div>
 
@@ -63,6 +63,21 @@
           href="https://github.com/SachaBrd/site-restaurant"
           target="_blank"
           >https://github.com/SachaBrd/site-restaurant</a
+        >
+      </div>
+
+      <div class="text-purple-400 pl-6 flex flex-row">
+        <colorText class="pr-1"
+          :printSpeed="50"
+          @printDone="claraLine6 = true"
+          :printStatus="claraLine5"
+          printableText="Pokmeon battle : "
+        ></colorText
+        ><a v-if="claraLine6"
+          class="text-cyan-400 underline"
+          href="https://github.com/SachaBrd/pokemon-battle-system"
+          target="_blank"
+          >https://github.com/SachaBrd/pokemon-battle-system</a
         >
       </div>
 

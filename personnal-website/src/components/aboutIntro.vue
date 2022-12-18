@@ -36,16 +36,18 @@
         /></span>
       </div>
        <Transition>
-      <div class="absolute right-24 -top-[90px]" v-show="pepeToggle">
-        <img
+      <!-- <div class="absolute right-24 -top-[90px]" v-show="pepeToggle">
+        <img class="strong-tilt-move-shake"
           src="../assets/HyperPepeCut.webp"
           rel="preload"
           alt="Happy Peepo"
         />
-        <!-- <img
-          src="../assets/f2bg.png"
+      </div> -->
+      <div class="absolute right-24 -top-[135px]" v-show="pepeToggle">
+        <img class="strong-tilt-move-shake"
+          src="../assets/red.png"
           rel="preload"
-        /> -->
+        />
       </div>
       </Transition>
 
@@ -238,6 +240,34 @@ export default {
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
+}
+
+img.strong-tilt-move-shake:hover {
+  animation: tilt-n-move-shaking 0.20s infinite;
+}
+
+img.constant-tilt-shake {
+  animation: tilt-shaking 0.3s infinite;
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(2px, 2px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-2px, 2px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes vertical-shaking {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(2px) }
+  50% { transform: translateY(-2px) }
+  75% { transform: translateY(2px) }
+  100% { transform: translateY(0) }
+}
+
+img.vertical-shake {
+  animation: vertical-shaking 2s infinite;
 }
 
 </style>
