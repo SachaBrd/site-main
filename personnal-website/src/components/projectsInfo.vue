@@ -6,13 +6,13 @@
       <button
         class="rounded-full w-5 h-5 bg-[#00CA4E] hover:bg-[#33D571]"
       ></button>
-      <button @click="this.$emit('closed')"
+      <!-- <button @click="this.$emit('closed')"
         class="rounded-full w-5 h-5 bg-[#FFBD44] hover:bg-[#FFCA69]"
       ></button>
       <button
         @click="this.$emit('closed')"
         class="rounded-full w-5 h-5 bg-[#FF605C] hover:bg-[#FF807D]"
-      ></button>
+      ></button> -->
     </div>
     </div>
     <div

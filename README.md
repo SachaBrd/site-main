@@ -11,3 +11,6 @@
 - deployer sur heroku
 
 - acheter un nom de domaine et deployer sur www avec (aws ou ovh ?)
+
+
+- Interface combat https://github.com/DeusMalsith/pokemon-battle-system
