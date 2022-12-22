@@ -1,7 +1,18 @@
 <!DOCTYPE html>
-<html style="background-color:rgb(51 65 85);" lang="en">
+<!-- <html style="background-color:rgb(51 65 85);" lang="en"> -->
 <!-- <html style="background-image:url(https://external-preview.redd.it/yfVNONOE-JRyWcswbTrxIOKN38w_gzqe4tJhyXkPgKU.jpg?auto=webp&s=9a7d5abd43b32d3ee01cc61c0dccbecf985480af);" lang="en"> -->
-<!-- <html style="background-image:url(https://external-preview.redd.it/yfVNONOE-JRyWcswbTrxIOKN38w_gzqe4tJhyXkPgKU.jpg?auto=webp&s=9a7d5abd43b32d3ee01cc61c0dccbecf985480af);" lang="en"> -->
+<!-- <html style="background-image:url(https://i.pinimg.com/originals/25/8b/87/258b87f89af7cbb682161b3fc34f0df6.jpg); background-size: 100% 100%; height: 100%;" lang="en"> -->
+<!-- <html style="background-image:url(https://img.freepik.com/premium-vector/pixel-art-city-background-sunset-with-buildings-constructions-bridge-8bit-game_360488-538.jpg?w=2000); background-size: 100% 100%; height: 100%;" lang="en"> -->
+<!-- <html style="background-image:url(https://i.pinimg.com/originals/b1/e7/84/b1e784b9edb0272216441fc1774d8ed4.gif); background-size: 100% 100%; height: 100%;" lang="en"></html> -->
+
+
+
+
+<!-- Light mode -->
+<html id="htmlmain" style="background-image:url(https://i.imgur.com/bqUVaU9.gif); background-size: 100% 100%; height: 100%;" lang="en"></html>
+
+<!-- Night mode -->
+<!-- <html style="background-image:url(https://cutewallpaper.org/cdn-cgi/mirage/dd19f2d06ebc24f541f142b37b4289ffa7de722a7607e39984c5c6dd4ce8defd/1280/21/pixel-art-gif-background/Futuristic-Landscapes-Get-a-Retro-Look-Thanks-to-Pixel-Art-.gif); background-size: 100% 100%; height: 100%;" lang="en"></html> -->
 
   
   <head>
@@ -13,6 +24,10 @@
     <title>SachaBrd</title>
   </head>
   <body>
+
+    <button class="button-50" id="darkmode" role="button" onclick="myFunction()">Switch to City</button>
+    <button style="display: none;" class="button-49" id="lightmode" role="button" onclick="myFunction()">Switch to nature</button>
+    
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
@@ -20,3 +35,184 @@
     <!-- built files will be auto injected -->
   </body>
 </html>
+
+<style>
+  .dark-mode {
+  background-image:url(https://cutewallpaper.org/cdn-cgi/mirage/dd19f2d06ebc24f541f142b37b4289ffa7de722a7607e39984c5c6dd4ce8defd/1280/21/pixel-art-gif-background/Futuristic-Landscapes-Get-a-Retro-Look-Thanks-to-Pixel-Art-.gif) !important;
+  background-size: 100% 100%; height: 100%;
+}
+
+/* CSS */
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'SWITCH';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+.button-50,
+.button-50:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #1f3847 5%);
+  border: 0;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #097e05;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-50:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'SWITCH';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #097e05 3%, #097e05 5%, #1f3847 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #097e05;
+  clip-path: var(--slice-0);
+}
+
+.button-50:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@media (min-width: 768px) {
+  .button-50,
+  .button-50:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+</style>
+
+<script>
+  function myFunction() {
+  var element = document.body;
+  var html = document.getElementById("htmlmain");
+  var x = document.getElementById("lightmode");
+  var y = document.getElementById("darkmode");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "none";
+      html.style = "background-image:url(https://cutewallpaper.org/cdn-cgi/mirage/dd19f2d06ebc24f541f142b37b4289ffa7de722a7607e39984c5c6dd4ce8defd/1280/21/pixel-art-gif-background/Futuristic-Landscapes-Get-a-Retro-Look-Thanks-to-Pixel-Art-.gif) !important; background-size: 100% 100%; height: 100%;"
+    } else {
+      x.style.display = "none";
+      y.style.display = "block";
+      html.style = "background-image:url(https://i.imgur.com/bqUVaU9.gif) !important; background-size: 100% 100%; height: 100%;"
+    }
+}
+
+</script>

@@ -57,14 +57,14 @@
         <button
           class="rounded-full w-5 h-5 bg-[#00CA4E] hover:bg-[#33D571]"
         ></button>
-        <!-- <button
+        <button
           @click="this.$emit('closed')"
           class="rounded-full w-5 h-5 bg-[#FFBD44] hover:bg-[#FFCA69]"
         ></button>
         <button
           @click="this.$emit('closed')"
           class="rounded-full w-5 h-5 bg-[#FF605C] hover:bg-[#FF807D]"
-        ></button> -->
+        ></button>
       </div>
     </div>
     <div
@@ -73,23 +73,23 @@
       <div class="text-[#57a64a] italic pl-3 flex flex-wrap">
         <colorText
           :printSpeed="20"
-          :printStatus="claraLine1"
-          @printDone="claraLine2 = true"
+          :printStatus="sachaLine1"
+          @printDone="sachaLine2 = true"
           printableText="//Hi my name is Sacha"
         ></colorText>
         <colorText
           class="whitespace-nowrap pl-1"
           :printSpeed="20"
-          @printDone="claraLine3 = true"
-          :printStatus="claraLine2"
+          @printDone="sachaLine3 = true"
+          :printStatus="sachaLine2"
           printableText=""
         ></colorText>
       </div>
       <div class="text-[#57a64a] italic pl-3 pb-3">
         <colorText
           :printSpeed="20"
-          @printDone="claraLine4 = true"
-          :printStatus="claraLine3"
+          @printDone="sachaLine4 = true"
+          :printStatus="sachaLine3"
           printableText="//I am a 24 years old data & cloud engineer living in Paris, France. I do code, play music, paint, digital art and more."
         ></colorText>
       </div>
@@ -98,8 +98,8 @@
       <div class="pl-3">
         <colorText
           :printSpeed="50"
-          @printDone="claraLine5 = true"
-          :printStatus="claraLine4"
+          @printDone="sachaLine5 = true"
+          :printStatus="sachaLine4"
           printableText="links = {"
         ></colorText>
       </div>
@@ -108,13 +108,15 @@
         <colorText
           class="pr-1"
           :printSpeed="50"
-          @printDone="claraLine6 = true"
-          :printStatus="claraLine5"
+          @printDone="sachaLine6 = true"
+          :printStatus="sachaLine5"
           printableText="Mail:"
         ></colorText
         ><a
-          v-if="claraLine6"
-          class="text-400 flex"
+          v-if="sachaLine6"
+          class="text-cyan-400 underline"
+          href=""
+          target="_blank"
           >bourdeau.sacha@gmail.com</a
         >
       </div>
@@ -123,12 +125,12 @@
         <colorText
           class="pr-1"
           :printSpeed="50"
-          @printDone="claraLine7 = true"
-          :printStatus="claraLine6"
+          @printDone="sachaLine7 = true"
+          :printStatus="sachaLine6"
           printableText="Github:"
         ></colorText
         ><a
-          v-if="claraLine7"
+          v-if="sachaLine7"
           class="text-cyan-400 underline"
           href="https://github.com/sachabrd"
           target="_blank"
@@ -140,12 +142,12 @@
         <colorText
           class="pr-1"
           :printSpeed="50"
-          @printDone="claraLine8 = true"
-          :printStatus="claraLine7"
+          @printDone="sachaLine8 = true"
+          :printStatus="sachaLine7"
           printableText="Instagram:"
         ></colorText
         ><a
-          v-if="claraLine8"
+          v-if="sachaLine8"
           class="text-cyan-400 underline"
           href="https://www.instagram.com/sachabrd_art/"
           target="_blank"
@@ -157,12 +159,12 @@
         <colorText
           class="pr-1"
           :printSpeed="50"
-          @printDone="claraLine9 = true"
-          :printStatus="claraLine8"
+          @printDone="sachaLine9 = true"
+          :printStatus="sachaLine8"
           printableText="Spotify:"
         ></colorText
         ><a
-          v-if="claraLine9"
+          v-if="sachaLine9"
           class="text-cyan-400 underline"
           href="https://open.spotify.com/user/ozyra?si=db6ec2a855f74364"
           target="_blank"
@@ -173,13 +175,13 @@
       <div class="text-purple-400 pl-6 flex flex-row">
         <colorText
           class="pr-1"
-          @printDone="claraLine10 = true"
+          @printDone="sachaLine10 = true"
           :printSpeed="50"
-          :printStatus="claraLine9"
+          :printStatus="sachaLine9"
           printableText=""
         ></colorText
         ><a
-          v-if="claraLine10"
+          v-if="sachaLine10"
           class="text-cyan-400 underline"
           href=""
           target="_blank"
@@ -190,7 +192,7 @@
       <div class="pl-3">
         <colorText
           :printSpeed="50"
-          :printStatus="claraLine10"
+          :printStatus="sachaLine10"
           printableText="}"
         ></colorText>
       </div>
@@ -205,17 +207,17 @@ export default {
   name: "aboutIntro",
   data() {
     return {
-      claraLine1: true,
-      claraLine2: false,
-      claraLine3: false,
-      claraLine4: false,
-      claraLine5: false,
-      claraLine6: false,
-      claraLine7: false,
-      claraLine8: false,
-      claraLine9: false,
-      claraLine10: false,
-      claraLine11: false,
+      sachaLine1: true,
+      sachaLine2: false,
+      sachaLine3: false,
+      sachaLine4: false,
+      sachaLine5: false,
+      sachaLine6: false,
+      sachaLine7: false,
+      sachaLine8: false,
+      sachaLine9: false,
+      sachaLine10: false,
+      sachaLine11: false,
       displayAbout: true,
       pepeToggle: false,
     };

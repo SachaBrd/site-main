@@ -1,5 +1,6 @@
 <template>
-  <div style="background-image:url(https://external-preview.redd.it/yfVNONOE-JRyWcswbTrxIOKN38w_gzqe4tJhyXkPgKU.jpg?auto=webp&s=9a7d5abd43b32d3ee01cc61c0dccbecf985480af); background-size: 100%;">
+  <!-- <div style="background-image:url(https://external-preview.redd.it/yfVNONOE-JRyWcswbTrxIOKN38w_gzqe4tJhyXkPgKU.jpg?auto=webp&s=9a7d5abd43b32d3ee01cc61c0dccbecf985480af); background-size: 100%; opacity: 0"> -->
+  <div>
     <titleCard></titleCard>
     <div class="flex flex-col justify-center items-center">
       <aboutIntro :displayProject=this.displayProject @closed="displayIntro = false" v-if="displayIntro"></aboutIntro>

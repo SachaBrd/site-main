@@ -6,13 +6,13 @@
       <button
         class="rounded-full w-5 h-5 bg-[#00CA4E] hover:bg-[#33D571]"
       ></button>
-      <!-- <button @click="this.$emit('closed')"
+      <button @click="this.$emit('closed')"
         class="rounded-full w-5 h-5 bg-[#FFBD44] hover:bg-[#FFCA69]"
       ></button>
       <button
         @click="this.$emit('closed')"
         class="rounded-full w-5 h-5 bg-[#FF605C] hover:bg-[#FF807D]"
-      ></button> -->
+      ></button>
     </div>
     </div>
     <div
@@ -21,8 +21,8 @@
       <div class="text-[#57a64a] italic pl-3 flex flex-wrap">
         <colorText
           :printSpeed="20"
-          :printStatus="claraLine1"
-          @printDone="claraLine2 = true"
+          :printStatus="sachaLine1"
+          @printDone="sachaLine2 = true"
           printableText="//My Projects so far"
         ></colorText>
       </div>
@@ -30,8 +30,8 @@
       <div class="pl-3">
         <colorText
           :printSpeed="50"
-          @printDone="claraLine3 = true"
-          :printStatus="claraLine2"
+          @printDone="sachaLine3 = true"
+          :printStatus="sachaLine2"
           printableText="links = {"
         ></colorText>
       </div>
@@ -39,11 +39,11 @@
       <div class="text-purple-400 pl-6 flex flex-row">
         <colorText class="pr-1"
           :printSpeed="50"
-          @printDone="claraLine4 = true"
-          :printStatus="claraLine3"
+          @printDone="sachaLine4 = true"
+          :printStatus="sachaLine3"
           printableText="This website: "
         ></colorText
-        ><a v-if="claraLine4"
+        ><a v-if="sachaLine4"
           class="text-cyan-400 underline"
           href="https://github.com/SachaBrd/site-main"
           target="_blank"
@@ -51,14 +51,14 @@
         >
       </div>
 
-      <div class="text-purple-400 pl-6 flex flex-row">
+      <!-- <div class="text-purple-400 pl-6 flex flex-row">
         <colorText class="pr-1"
           :printSpeed="50"
-          @printDone="claraLine5 = true"
-          :printStatus="claraLine4"
+          @printDone="sachaLine5 = true"
+          :printStatus="sachaLine4"
           printableText="Restaurant: "
         ></colorText
-        ><a v-if="claraLine5"
+        ><a v-if="sachaLine5"
           class="text-cyan-400 underline"
           href="https://github.com/SachaBrd/site-restaurant"
           target="_blank"
@@ -69,22 +69,22 @@
       <div class="text-purple-400 pl-6 flex flex-row">
         <colorText class="pr-1"
           :printSpeed="50"
-          @printDone="claraLine6 = true"
-          :printStatus="claraLine5"
+          @printDone="sachaLine6 = true"
+          :printStatus="sachaLine5"
           printableText="Pokmeon battle : "
         ></colorText
-        ><a v-if="claraLine6"
+        ><a v-if="sachaLine6"
           class="text-cyan-400 underline"
           href="https://github.com/SachaBrd/pokemon-battle-system"
           target="_blank"
           >https://github.com/SachaBrd/pokemon-battle-system</a
         >
-      </div>
+      </div> -->
 
       <div class="pl-3">
         <colorText
           :printSpeed="50"
-          :printStatus="claraLine5"
+          :printStatus="sachaLine3"
           printableText="}"
         ></colorText>
       </div>
@@ -99,12 +99,12 @@ export default {
   name: "OSWindow",
   data() {
     return {
-      claraLine1: true,
-      claraLine2: false,
-      claraLine3: false,
-      claraLine4: false,
-      claraLine5 : false,
-      claraLine6 : false,
+      sachaLine1: true,
+      sachaLine2: false,
+      sachaLine3: false,
+      sachaLine4: false,
+      sachaLine5 : false,
+      sachaLine6 : false,
       displayAbout: true,
     };
   },
