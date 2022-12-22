@@ -175,13 +175,33 @@
       <div class="text-purple-400 pl-6 flex flex-row">
         <colorText
           class="pr-1"
-          @printDone="sachaLine10 = true"
           :printSpeed="50"
+          @printDone="sachaLine10 = true"
           :printStatus="sachaLine9"
-          printableText=""
+          printableText="Soundcloud:"
         ></colorText
         ><a
           v-if="sachaLine10"
+          class="text-cyan-400 underline"
+          href="https://soundcloud.com/sacha-bourdeau-781774250"
+          target="_blank"
+          >soundcloud</a
+        >
+      </div>
+
+
+      
+
+      <div class="text-purple-400 pl-6 flex flex-row">
+        <colorText
+          class="pr-1"
+          @printDone="sachaLine11 = true"
+          :printSpeed="50"
+          :printStatus="sachaLine10"
+          printableText=""
+        ></colorText
+        ><a
+          v-if="sachaLine11"
           class="text-cyan-400 underline"
           href=""
           target="_blank"
@@ -218,6 +238,7 @@ export default {
       sachaLine9: false,
       sachaLine10: false,
       sachaLine11: false,
+      sachaLine12: false,
       displayAbout: true,
       pepeToggle: false,
     };
