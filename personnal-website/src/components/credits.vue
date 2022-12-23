@@ -38,8 +38,6 @@
         ></colorText>
       </div>
 
-      
-
       <div class="text-[#57a64a] italic pl-3 flex flex-wrap">
         <colorText
           :printSpeed="20"
@@ -48,6 +46,7 @@
           printableText="//Website made by me, main character drawn by me, all other characters from pinterest"
         ></colorText>
       </div>
+
       <img src="../assets/f2bg.png" rel="preload" />
     </div>
     
