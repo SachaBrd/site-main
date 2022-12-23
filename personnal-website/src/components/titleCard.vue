@@ -1,20 +1,30 @@
 <template>
-  <div class="flex justify-center">
-    <div>
-      <a href=".">
+    <!-- <div> -->
+    <!-- <div v-if="displayTitle"> -->
+    <div class="flex justify-center"
+      v-if="displayTitle" :class="{ '': displayTitle, '': !displayTitle }"
+    >  
+      <!-- <a href=""> -->
         <h1>
           <!-- <img class="vertical-shake" margin-left="600" rel="preload" src="../assets/f2bg.png" alt="Title" /> -->
-          <img class="vertical-shake" margin-left="600" rel="preload" src="../assets/sacha.png" alt="Title" />
+          <img class="vertical-shake" margin-left="600" rel="preload" src="../assets/st2.png" alt="Title" />
         </h1>
-        </a>
+      <!-- </a> -->
     </div>
-  </div>
 </template>
 
 <script>
 export default {
   name: "titleCard",
+  data() {
+    return {
+      displayTitle: true,
+    };
+  },
   components: {},
+  props:{
+    displayProject: Boolean
+  }
 };
 </script>
 

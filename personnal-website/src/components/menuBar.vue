@@ -1,9 +1,15 @@
 <template>
 <div class="fixed inset-x-0 bottom-0 mb-2">
     <div class="flex justify-center">
-      <div class="rounded-lg min-w-[240px] min-h-[80px] bg-black opacity-20 relative">
+      <div class="rounded-lg min-w-[320px] min-h-[80px] bg-black opacity-20 relative">
       </div>
       <div class="container flex flex-row justify-center absolute top-0">
+        <div class="flex flex-col justify-center">
+          <div v-if="titleButton" class="flex justify-center relative bottom-3">
+            <div class="rounded-full w-2 h-2 bg-white absolute animate-bounce"></div>
+          </div>
+          <img @click="this.$emit('toggleTitle')" class="h-20 w-20 cursor-pointer" src="../assets/sword.png" alt="Title Information button">
+        </div>
         <div class="flex flex-col justify-center">
           <div v-if="infoButton" class="flex justify-center relative bottom-3">
             <div class="rounded-full w-2 h-2 bg-white absolute animate-bounce"></div>
@@ -32,6 +38,7 @@
 export default {
   name: 'menuBar',
   props: {
+    titleButton: Boolean,
     infoButton: Boolean,
     projectButton: Boolean,
   },

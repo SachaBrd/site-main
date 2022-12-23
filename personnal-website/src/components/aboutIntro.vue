@@ -36,18 +36,13 @@
         /></span>
       </div>
        <Transition>
-      <!-- <div class="absolute right-24 -top-[90px]" v-show="pepeToggle">
-        <img class="strong-tilt-move-shake"
-          src="../assets/HyperPepeCut.webp"
-          rel="preload"
-          alt="Happy Peepo"
-        />
-      </div> -->
       <div class="absolute right-24 -top-[135px]" v-show="pepeToggle">
+        <!-- <a href=""> -->
         <img class="strong-tilt-move-shake"
           src="../assets/red.png"
           rel="preload"
         />
+        <!-- </a> -->
       </div>
       </Transition>
 
@@ -189,7 +184,7 @@
         >
       </div>
 
-
+      
       
 
       <div class="text-purple-400 pl-6 flex flex-row">
@@ -216,6 +211,7 @@
           printableText="}"
         ></colorText>
       </div>
+
     </div>
   </div>
 </template>
