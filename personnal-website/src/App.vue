@@ -5,11 +5,12 @@
       <titleCard @closed="displayTitle = true" v-if="displayTitle"></titleCard>
       <aboutIntro :displayProject=this.displayProject @closed="displayIntro = false" v-if="displayIntro"></aboutIntro>
       <projectsInfo @closed="displayProject = false" v-if="displayProject"></projectsInfo>
+      <credits @closed="displayCredits = false" v-if="displayCredits"></credits>
 
       <!-- <router-link tag="li" class="col" class-active="active" to="/CNN" exact>CNN</router-link> -->
 
     </div>
-    <menuBar @toggleTitle="displayTitle = !displayTitle" @toggleIntro="displayIntro = !displayIntro" @toggleProject="displayProject = !displayProject" :projectButton="displayProject" :infoButton="displayIntro" :titleButton="displayTitle"></menuBar>
+    <menuBar @toggleTitle="displayTitle = !displayTitle" @toggleIntro="displayIntro = !displayIntro" @toggleProject="displayProject = !displayProject" @toggleCredits="displayCredits = !displayCredits" :projectButton="displayProject" :infoButton="displayIntro" :titleButton="displayTitle" :creditsButton="displayCredits"></menuBar>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import aboutIntro from "./components/aboutIntro";
 import projectsInfo from "./components/projectsInfo";
 import titleCard from "./components/titleCard";
 import menuBar from "./components/menuBar";
+import credits from "./components/credits";
 import "./index.css";
 
 export default {
@@ -27,13 +29,15 @@ export default {
       displayIntro: true,
       displayProject: true,
       displayTitle: true,
+      displayCredits: true,
     };
   },
   components: {
     aboutIntro,
     titleCard,
     menuBar,
-    projectsInfo
+    projectsInfo,
+    credits
   },
 };
 </script>

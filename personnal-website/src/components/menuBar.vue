@@ -22,6 +22,12 @@
           </div>
           <img @click="this.$emit('toggleProject')" class="h-20 w-20 cursor-pointer" src="../assets/VS_Code.webp" alt="Project Information button">
         </div>
+        <div class="flex flex-col justify-center">
+          <div v-if="creditsButton" class="flex justify-center relative bottom-3">
+            <div class="rounded-full w-2 h-2 bg-white absolute animate-bounce"></div>
+          </div>
+          <img @click="this.$emit('toggleCredits')" class="h-20 w-20 cursor-pointer" src="../assets/plant.png" alt="credits button">
+        </div>
         <div class="flex flex-col justify-center"> 
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
             <img class="h-20 w-20 cursor-pointer" src="../assets/low_res_youtube.webp" alt="Youtube button">
@@ -41,6 +47,7 @@ export default {
     titleButton: Boolean,
     infoButton: Boolean,
     projectButton: Boolean,
+    creditsButton: Boolean,
   },
 }
 </script>

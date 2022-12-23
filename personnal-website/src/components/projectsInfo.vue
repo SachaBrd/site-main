@@ -1,5 +1,5 @@
 <template>
-  <div v-if="displayAbout" class="container bg-slate-800 rounded-lg max-w-[800px] m-2 overflow-x-auto mb-24">
+  <div v-if="displayAbout" class="container bg-slate-800 rounded-lg max-w-[800px] m-2 overflow-x-auto mb-1">
     <div class="flex flex-row">
       <div class="container flex justify-start text-white p-2 pl-4 max-w-[800px] italic"><h2>Projects</h2>
       <!-- <span class="pl-5"
